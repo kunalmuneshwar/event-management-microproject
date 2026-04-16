@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --font-heading: 'Outfit', 'Segoe UI', sans-serif;
+  --font-body: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+
+  --ink: #11233f;
+  --ink-soft: #4a5d7e;
+  --brand: #0c58c7;
+  --brand-dark: #093f8f;
+  --bg-a: #eff4ff;
+  --bg-b: #f6fcf8;
+  --card: rgba(255, 255, 255, 0.92);
+  --border: #cdd7ea;
+
+  --shadow-md: 0 14px 28px rgba(20, 38, 72, 0.08);
+  --shadow-lg: 0 24px 44px rgba(20, 38, 72, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at 20% 0%, #dbecff 0%, transparent 34%),
+    radial-gradient(circle at 80% 20%, #d7f7e5 0%, transparent 34%),
+    linear-gradient(120deg, var(--bg-a), var(--bg-b));
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+button,
+a {
+  font-family: var(--font-heading);
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  transition: all 0.18s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#root {
+  min-height: 100dvh;
+}
