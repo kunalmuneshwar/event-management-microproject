@@ -6,6 +6,7 @@ import AdminSignupPage from './pages/auth/AdminSignupPage'
 import UserLoginPage from './pages/auth/UserLoginPage'
 import UserSignupPage from './pages/auth/UserSignupPage'
 import LandingPage from './pages/common/LandingPage'
+import LoginHubPage from './pages/common/LoginHubPage'
 import NotFoundPage from './pages/common/NotFoundPage'
 import UserDashboardPage from './pages/user/UserDashboardPage'
 import UserEventDetailsPage from './pages/user/UserEventDetailsPage'
@@ -16,6 +17,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<LoginHubPage />} />
 
       <Route path="/admin/login" element={<AdminLoginPage />} />
       <Route path="/admin/signup" element={<AdminSignupPage />} />

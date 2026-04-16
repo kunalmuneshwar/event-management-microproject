@@ -1,3 +1,27 @@
+.public-shell {
+  min-height: 100dvh;
+}
+
+.public-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.public-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .landing-wrap {
   min-height: 100dvh;
   display: grid;
@@ -34,6 +58,24 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.auth-hub-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.hub-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.hub-card h2 {
+  margin-top: 0;
 }
 
 .auth-card {
@@ -369,6 +411,10 @@
     padding: 22px;
   }
 
+  .auth-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
   .card-grid,
   .stats-grid {
     grid-template-columns: 1fr;
@@ -384,6 +430,10 @@
   }
 
   .app-header {
+    flex-wrap: wrap;
+  }
+
+  .public-header {
     flex-wrap: wrap;
   }
 }
